@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 4</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <table>
+                <legend>Detalles de la foto</legend>
+
+                <p>Titulo<br>
+                    <input type="text" name="titulo" maxlength="50" required />
+                </p>
+                <p>
+                    Descripción<br>
+                    <textarea rows="6" cols="59"></textarea>
+                </p>
+                <tr>
+                    <td>
+                        Continente<br>
+                    </td>
+                    <td>
+                        Copyright?
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select>
+                            <option selected disabled>Elige el continente</option>
+                            <option value="América">América</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Europa">Europa</option>
+                            <option value="NA">Norte América</option>
+                            <option value="SA"> Sur América</option>
+                        </select>
+                    </td>
+                    <td><input type="radio" name="copy" value="reservados">Todos los derechos reservados<br>
+                        <input type="radio" name="copy" value="CC">Creattive Commons
+                    </td>
+                </tr>
+                <tr>
+                    <td>País</td>
+                    <td>Licencias Creative Commons</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select>
+                            <option selected disabled>Pais</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Mexico">México</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                        </select> <br>
+
+                        <p>
+                            Ciudad<br>
+                            <input list="Ciudades" id="ice-cream-choice" name="ice-cream-choice">
+                        </p>
+
+                        <datalist id="Ciudades">
+                            <option value="Calgary">
+                            <option value="Montreal">
+                            <option value="Toronto">
+                            <option value="Vancouver">
+                            <option value="Tlaxcala">
+                        </datalist>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="con" />Atribución<br>
+                        <input type="checkbox" name="con" />No comercial<br>
+                        <input type="checkbox" name="con" />No hay trabajos derivativos<br>
+                        <input type="checkbox" name="con" />Compartir por igual<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Acepto la licencia del Software
+                            <input type="checkbox" name="condiciones" /><br>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Califica esta foto:</td>
+                    <td> Fecha de toma:</td>
+                </tr>
+                <tr>
+                    <td> <input type="number" min="1" max="10"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Colección de color:</td>
+                    <td>Hora de toma</td>
+                </tr>
+                <tr>
+                    <td><input type="color"></td>
+                    <td><input type="time"></td>
+                </tr>
+            </table>
+            <p>
+            <input type="submit" value="Enviar"/>
+            <input type="submit" value="Limpiar"/>
+        </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
